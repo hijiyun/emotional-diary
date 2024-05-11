@@ -1,12 +1,12 @@
 import { S } from "./Button.style";
 
-const Button = ({ children, type, onClick }) => {
+const Button = ({ children, type, onClick, ...props }) => {
   return (
-    <div>
-      <S.Button type={type} onClick={onClick}>
+    <>
+      <S.Button type={type} onClick={onClick} {...props}>
         {children}
       </S.Button>
-    </div>
+    </>
   );
 };
 

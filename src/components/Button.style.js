@@ -13,7 +13,6 @@ const typeStyles = {
 
 export const S = {
   Button: styled.button`
-    background-color: rgb(236, 236, 236);
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -23,5 +22,6 @@ export const S = {
     background-color: ${({ type }) =>
       typeStyles[type]?.backgroundColor || "rgb(236, 236, 236)"};
     color: ${({ type }) => typeStyles[type]?.color || "black"};
+    flex: ${({ size }) => (size === "long" ? 1 : null)};
   `,
 };
