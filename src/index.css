@@ -3,6 +3,13 @@
   src: url("/public/assets/fonts/DoHyeon-Regular.ttf");
 }
 
+html,
+body {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+}
+
 body * {
   font-family: "동글동글체";
 }
