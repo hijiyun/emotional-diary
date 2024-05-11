@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "동글동글체";
+  src: url("/public/assets/fonts/DoHyeon-Regular.ttf");
+}
+
+body * {
+  font-family: "동글동글체";
+}
