@@ -1,12 +1,5 @@
 import styled from "styled-components";
-
-const emotionBgColors = {
-  1: "rgb(100,201,100)",
-  2: "rgb(157,215,114)",
-  3: "rgb(253,206,23)",
-  4: "rgb(253,132,70)",
-  5: "rgb(253,86,85)",
-};
+import { EMOTION_BG_COLORS } from "../constants/EMOTION_BG_COLORS";
 
 export const S = {
   DiaryItem: styled.div`
@@ -29,7 +22,7 @@ export const S = {
       width: 50%;
     }
 
-    background-color: ${({ $emotionid }) => emotionBgColors[$emotionid]};
+    background-color: ${({ $emotionid }) => EMOTION_BG_COLORS[$emotionid]};
   `,
   InfoSection: styled.div`
     flex: 1;
