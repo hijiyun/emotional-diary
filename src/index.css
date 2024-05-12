@@ -8,6 +8,7 @@ body {
   margin: 0;
   width: 100%;
   background-color: rgb(255, 245, 252);
+  display: flex;
 }
 
 #root {
