@@ -7,7 +7,6 @@ import { useState } from "react";
 const DiaryList = ({ data }) => {
   const navigate = useNavigate();
   const [sortType, setSortType] = useState("latest");
-  console.log(sortType);
 
   const onChangeSortType = (e) => {
     setSortType(e.target.value);
@@ -15,7 +14,6 @@ const DiaryList = ({ data }) => {
 
   const getSortedDate = () => {
     return data.toSorted((a, b) => {
-      console.log("a:", a, "b:", b);
       if (sortType === "oldest") {
         return Number(a.createdDate) - Number(b.createdDate);
       } else {
